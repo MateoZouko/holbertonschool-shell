@@ -1,2 +1,2 @@
 #!/bin/bash
-if u=guillame, then chmod vincent: hello
+chmod --from=guillame vincent hello
