@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff /_hello
+find . -name "_hello" -exec chown vincent {} \; -exec chgrp staff {} \;
