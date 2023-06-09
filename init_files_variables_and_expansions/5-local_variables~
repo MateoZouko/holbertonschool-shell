@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Print local variables
+echo "Local variables:"
+set -o posix; set | grep -v -E '^(BASH_|PWD|SHLVL|_)'
+
+# Print environment variables
+echo "Environment variables:"
+env | sort
+
+# Print functions
+echo "Functions:"
+declare -F | awk '{print $3}'
