@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Local variables:" | set -o posix; set | grep -v -E '^(BASH_|PWD|SHLVL|_)' | echo "Environment variables:" | env | sort | echo "Functions:" | declare -F | awk '{print $3}'
+(set -o posix; set grep -v -E '^(BASH_|PWD|SHLVL|_)') | (env | sort) | (declare -F | awk '{print $3}')
