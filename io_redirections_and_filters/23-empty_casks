@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -print0 | xargs -0 basename | tr -d '\n'
+find . -empty -exec sh -c 'printf "%s\n" "${1##*/}"' sh {} \;
