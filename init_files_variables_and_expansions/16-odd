@@ -1,0 +1,2 @@
+#!/bin/bash
+print('\n'.join(input().split('\n')[::2]))
