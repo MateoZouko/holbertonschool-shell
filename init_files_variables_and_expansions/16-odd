@@ -1,2 +1,2 @@
 #!/bin/bash
-print('\n'.join(input().split('\n')[::2]))
+grep -n -E '^(2|4|6|8|[0-9]{2,})' | sed 's/^[0-9]\+://'
